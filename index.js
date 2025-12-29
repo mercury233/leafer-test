@@ -2,6 +2,7 @@ const Leafer170 = require('leafer170');
 const Leafer191 = require('leafer191');
 const Leafer192 = require('leafer192');
 const Leafer1121 = require('leafer1121');
+const Leafer1122 = require('leafer1122');
 const skia = require('skia-canvas');
 const http = require('http');
 
@@ -71,6 +72,10 @@ http.createServer(async function (req, res) {
 	res.write(`	<img src="${(await createTest(Leafer1121)).data}" />
 				<img src="${(await createTest(Leafer1121, false)).data}" />
 				<img src="${(await createTest(Leafer1121, false, true)).data}" />
+				<hr/>`)
+	res.write(`	<img src="${(await createTest(Leafer1122)).data}" />
+				<img src="${(await createTest(Leafer1122, false)).data}" />
+				<img src="${(await createTest(Leafer1122, false, true)).data}" />
 				<hr/>`)
 	res.end()
 }).listen(3000, function () {

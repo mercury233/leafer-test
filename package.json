@@ -10,6 +10,7 @@
   "license": "ISC",
   "dependencies": {
     "leafer1121": "npm:@leafer-ui/node@^1.12.1",
+    "leafer1122": "npm:@leafer-ui/node@^1.12.2",
     "leafer170": "npm:@leafer-ui/node@^1.7.0",
     "leafer191": "npm:@leafer-ui/node@^1.9.1",
     "leafer192": "npm:@leafer-ui/node@^1.9.2",
